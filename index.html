@@ -1,0 +1,51 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+<style>
+.change{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.flex-container {
+  display: inline-flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+</style>
+
+<title>Home</title>
+</head>
+<body >
+<div class=" container my-5 border border-dark rounded" style=" position: relative;">
+<div class=" my-5" > 
+    <h5 id="equationcheck" style="color: red;">
+        **Please write the correct expression
+      </h5>
+      <h5 id="maximumvariablescheck" style="color: red;">
+        **Variables cannot be more than 26
+      </h5>
+      <label for="equation">Equation</label>
+<input type="text" class="form-control input-lg" id="equation" placeholder="Enter equation">
+
+<br>
+</div>
+<div id="res" style="width:60%; position:relative;left: 19%;" class="border border-danger rounded pt-2 pb-5  px-2 flex-container" ></div>
+<button id="final" class="btn btn-outline-primary change mt-5 mb-2 mr-2" >Evaluate</button>
+
+    
+
+<div id="output" class="mb-2 mt-5">
+    <b>Result:</b>
+
+</div>
+
+
+</div>
+</body>
+</html>
